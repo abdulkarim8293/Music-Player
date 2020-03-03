@@ -11,10 +11,13 @@ import android.view.ViewGroup;
 
 import com.abdulkarim.musicplayer.R;
 
-public class MusicFragment extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class ArtistFragment extends Fragment {
 
 
-    public MusicFragment() {
+    public ArtistFragment() {
         // Required empty public constructor
     }
 
@@ -23,9 +26,7 @@ public class MusicFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_music, container, false);
+        return inflater.inflate(R.layout.fragment_artist, container, false);
     }
-
-
 
 }
