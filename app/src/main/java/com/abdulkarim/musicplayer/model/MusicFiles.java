@@ -1,4 +1,4 @@
-package com.abdulkarim.musicplayer;
+package com.abdulkarim.musicplayer.model;
 
 public class MusicFiles {
 

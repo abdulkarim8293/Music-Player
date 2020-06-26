@@ -1,4 +1,4 @@
-package com.abdulkarim.musicplayer;
+package com.abdulkarim.musicplayer.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

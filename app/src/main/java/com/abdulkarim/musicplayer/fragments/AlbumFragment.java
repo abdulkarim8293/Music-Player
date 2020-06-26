@@ -4,29 +4,42 @@ package com.abdulkarim.musicplayer.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.abdulkarim.musicplayer.R;
+import com.abdulkarim.musicplayer.adapter.AlbumAdapter;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+import static com.abdulkarim.musicplayer.activity.MainActivity.musicFiles;
+
+
 public class AlbumFragment extends Fragment {
 
+    private RecyclerView recyclerView;
+    private AlbumAdapter albumAdapter;
 
     public AlbumFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_album, container, false);
+        View view = inflater.inflate(R.layout.fragment_album, container, false);
+
+        recyclerView = view.findViewById(R.id.recyclerViewId);
+        recyclerView.setHasFixedSize(true);
+        if (!(musicFiles.size() < 1)){
+            albumAdapter = new AlbumAdapter(getContext(),musicFiles);
+            recyclerView.setAdapter(albumAdapter);
+            recyclerView.setLayoutManager(new GridLayoutManager(getContext(),2));
+        }
+        return view;
     }
 
 }

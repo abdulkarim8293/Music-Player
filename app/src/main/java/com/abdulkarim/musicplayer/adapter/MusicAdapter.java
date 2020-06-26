@@ -2,7 +2,6 @@ package com.abdulkarim.musicplayer.adapter;
 
 import android.content.Context;
 import android.media.MediaMetadataRetriever;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.abdulkarim.musicplayer.MusicFiles;
+import com.abdulkarim.musicplayer.model.MusicFiles;
 import com.abdulkarim.musicplayer.R;
 import com.bumptech.glide.Glide;
 

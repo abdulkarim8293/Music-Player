@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.abdulkarim.musicplayer.R;
 import com.abdulkarim.musicplayer.adapter.MusicAdapter;
 
-import static com.abdulkarim.musicplayer.MainActivity.musicFiles;
+import static com.abdulkarim.musicplayer.activity.MainActivity.musicFiles;
 
 public class SongFragment extends Fragment {
 

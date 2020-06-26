@@ -1,4 +1,4 @@
-package com.abdulkarim.musicplayer;
+package com.abdulkarim.musicplayer.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -17,7 +17,6 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,6 +33,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.abdulkarim.musicplayer.model.MusicFiles;
+import com.abdulkarim.musicplayer.R;
+import com.abdulkarim.musicplayer.adapter.ViewPagerAdapter;
 import com.abdulkarim.musicplayer.fragments.AlbumFragment;
 import com.abdulkarim.musicplayer.fragments.ArtistFragment;
 import com.abdulkarim.musicplayer.fragments.PlayListFragment;
