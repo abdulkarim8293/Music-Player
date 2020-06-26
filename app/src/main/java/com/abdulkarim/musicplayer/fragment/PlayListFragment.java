@@ -1,4 +1,4 @@
-package com.abdulkarim.musicplayer.fragments;
+package com.abdulkarim.musicplayer.fragment;
 
 
 import android.os.Bundle;
